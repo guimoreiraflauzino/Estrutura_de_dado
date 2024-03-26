@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int is_prime(int n) {
+int primo(int n) {
     if (n <= 1) {
         return 0;
     }
@@ -15,16 +15,16 @@ int is_prime(int n) {
 
 int main(int argc, char *argv[]) {
     if (argc != 2) {
-        printf("Usage: %s <number>\n", argv[0]);
+        printf("usar: %s <numero>\n", argv[0]);
         return 1;
     }
 
-    int number = atoi(argv[1]);
+    int numero = atoi(argv[1]);
 
-    if (is_prime(number)) {
-        printf("true\n");
+    if (is_prime(numero)) {
+        printf("verdadeiro\n");
     } else {
-        printf("false\n");
+        printf("falso\n");
     }
 
     return 0;
